@@ -14,6 +14,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.tutorial.rest.webservices.restfulwebservices.exception.UserNotFoundException;
 
+import jakarta.validation.Valid;
+
 @RestController
 public class UserResource {
 
