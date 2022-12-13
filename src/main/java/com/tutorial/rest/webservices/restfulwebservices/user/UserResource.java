@@ -18,7 +18,7 @@ public class UserResource {
     }
 
     // GET /users
-    @GetMapping("/users")
+    @GetMapping("/users/")
     public List<User> retrieveAllUsers() {
         return service.findAll();
     }
@@ -30,7 +30,7 @@ public class UserResource {
     }
 
     // POST /users
-    @PostMapping("/users")
+    @PostMapping("/users/")
     public void createUser(@RequestBody User user) {
         service.save(user);
     }
